@@ -58,8 +58,8 @@
   border-radius: 5px;
   background-color: #196cff;
 }
-.block_1 > div > div:nth-child(1) > button >p {
-    margin-bottom: 6px;
+.block_1 > div > div:nth-child(1) > button > p {
+  margin-bottom: 6px;
 }
 .block_1 > div > div:nth-child(2) > img {
   width: 530px;
@@ -153,7 +153,6 @@
   height: 24px;
 }
 
-
 /* Block 3 ----------------------------------------------------------------------------------- */
 .block_3 {
   width: 100vw;
@@ -210,7 +209,6 @@
   color: #196cff;
 }
 .block_3 > div > div:last-child > img {
-
   width: 674.13px;
   height: 510px;
 }
@@ -234,7 +232,7 @@
   align-items: center;
 }
 .block_4 > div > div:first-child > img {
-    margin-top: -30px;
+  margin-top: -30px;
   width: 674px;
   height: 517px;
 }
@@ -279,9 +277,9 @@
 
 /* block5------------------------------------------------------------------------------------ */
 .block_5 {
-    background-color: #fff;
-    margin-top: -25px;
-  }
+  background-color: #fff;
+  margin-top: -25px;
+}
 .block_5 > div > div:first-child {
   height: 362.39px;
   /* background-color: aqua; */
@@ -292,36 +290,34 @@
   width: 674.5px;
   height: 517.86px;
 }
-.block_5 > div > div:nth-child(1) > p{
-    /* background-color: #ffd6db; */
-    margin-bottom: -30px;
+.block_5 > div > div:nth-child(1) > p {
+  /* background-color: #ffd6db; */
+  margin-bottom: -30px;
 }
 .block_5 > div > div:nth-child(1) > button {
   width: 179.39px;
   height: 40px;
 }
 
-
-
 /* block6------------------------------------------------------------------------------------ */
-.block_6 > div > div:first-child > img{
-    margin-top: 25px;
+.block_6 > div > div:first-child > img {
+  margin-top: 25px;
 }
-.block_6 > div > div:last-child>div{
-    margin-top: 50px;
+.block_6 > div > div:last-child > div {
+  margin-top: 50px;
 }
-.block_6 > div > div:last-child>div > h1{
-    height: 48px;
-    /* background-color: #ffd6db; */
+.block_6 > div > div:last-child > div > h1 {
+  height: 48px;
+  /* background-color: #ffd6db; */
 }
-.block_6 > div > div:last-child>div > p{
-    margin-bottom: 10px;
+.block_6 > div > div:last-child > div > p {
+  margin-bottom: 10px;
 }
 
 /* block5------------------------------------------------------------------------------------ */
 .block_7 {
-    margin-top: 5px;
+  margin-top: 5px;
 }
-.block_7 > div > div:first-child> h1{
-    width: 566.06px;
+.block_7 > div > div:first-child > h1 {
+  width: 566.06px;
 }
