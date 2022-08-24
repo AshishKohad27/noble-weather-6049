@@ -1,0 +1,231 @@
+#main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,400px);
+    margin: 50px auto;
+    padding: 30px;
+    gap: 30px;
+    width: 75%;
+  
+}
+
+#main img{
+    height: 100%;
+    width: 100%;
+}
+#main >div >p{
+    font-size: 25px;
+}
+#main >div h1{
+    font-size: 61px; 
+    width: 70%; 
+}
+#main >div div{
+    background-color: blue;
+    color: white;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#btn{
+  padding:7px;
+
+}
+#part{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 30px;
+    background-color: rgb(196, 171, 217);
+}
+#part div{
+    height: 200px;
+    padding: auto;
+}
+#part div img{
+    width: 70%;
+    height: 70%;
+}
+#h1{
+   text-align: center;
+   font-size: 57px;
+   margin-top: 60px;
+}
+#p{
+    width: 52%;
+    margin: auto;
+    font-size: 27px;
+    margin-bottom: 60px;
+}
+#polls{
+    background-color: rgb(196, 171, 217);
+    padding: 40px;
+}
+#part2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,400px);
+    gap: 30px;
+    margin: 60px auto;
+    padding: 30px;
+    width: 75%;
+}
+
+#part2 img{
+    width: 100%;
+    height: 100%;
+}
+#part2 >div>h1{
+   font-size: 60px; 
+}
+#part2 >div>p{
+    font-size: 25px;
+}
+#part2 >div>div{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 3px solid blue;
+}
+#btn2{
+    padding: auto;
+}
+#part3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin: 60px auto;
+    padding: 30px;
+    width: 75%;
+}
+#part3 >div{
+    height:400px;
+    padding: auto;
+}
+#part3 img{
+    width: 100%;
+    height: 100%;
+}
+#part3 >div>h1{
+   font-size: 60px; 
+}
+#part3 >div>p{
+    font-size: 25px;
+}
+#part4{
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+    padding: 60px 20px;
+    gap: 50px;
+    justify-content: space-around;
+    background-color: rgb(196, 171, 217);
+}
+ #part4 img{
+    width: 70%;
+    height: 70%;
+ } 
+ #part5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin: 60px auto;
+    padding: 30px;
+    width: 75%;
+}
+#part5 >div{
+    height:400px;
+    padding: auto;
+}
+#part5 img{
+    width: 100%;
+    height: 100%;
+}
+#part5 >div>h1{
+   font-size: 60px; 
+}
+#part5 >div>p{
+    font-size: 25px;
+}
+#part6{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 30px;
+    width: 75%;
+    margin: auto;
+    margin: 60px auto;
+}
+#part6 >div{
+    height:400px;
+    padding: auto;
+}
+#part6 img{
+    width: 100%;
+    height: 100%;
+}
+#part6 >div>h1{
+   font-size: 60px; 
+}
+#part6 >div>p{
+    font-size: 25px;
+}
+#h1p h1{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 55px;
+}
+#h1p p{
+    width: 50%;
+    text-align: center; 
+    padding: 30px 0px;
+    margin: auto;
+    font-size: 25px;
+}
+#part7{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,450px);
+    gap: 40px;
+    width: 75%;
+    margin: auto;
+}
+
+#part7 img{
+    width: 100%;
+    height: 70%;
+}
+#part7 button{
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0px;
+    color: white;
+    background-color: blue;
+}
+#htag{
+    text-align: center;
+    font-size: 55px;
+    margin:70px 0px 30px 0px;
+   
+}
+#part8{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,300px);
+    gap: 30px;
+    width: 75%;
+    margin: auto;
+}
+
+#part8 img{
+    width: 100%;
+    height: 70%;
+}
