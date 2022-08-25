@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template | Resources</title>
+    <link rel="stylesheet" href="./Res_Template.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #Navbar {
+        width: 100vw;
+        height: 50px;
+        background-color: rebeccapurple;
+    }
+
+    .block_1 {
+        width: 100vw;
+        height: auto;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -10px;
+        background-color: aqua;
+    }
+
+    .block_1 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* block 2 --------------------------------------------------------------------------- */
+    .block_2 {
+        width: 100vw;
+        background-color: lawngreen;
+        font-size: 16px;
+    }
+
+    .block_2>div {
+        width: 1200px;
+        height: auto;
+        margin: auto;
+        background-color: forestgreen;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Side_bar {
+        width: 284px;
+        background-color: rgb(180, 70, 30);
+    }
+
+    .Side_barRight {
+        width: 900px;
+        height: auto;
+        background-color: rgb(252, 9, 9);
+    }
+
+    .sRight_1 {
+        font-family: sans-serif;
+        color: #101834;
+    }
+
+    .sRight_1>div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .sRight_1>div>div {
+        margin: auto;
+        width: 427px;
+        height: 327px;
+        background-color: orangered;
+    }
+
+    .sRight_1>div>div:first-child {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .sRight_1>div>div:last-child {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .hide_1>div:nth-child(1) {
+        border-radius: 5px;
+        background-color: #FE7FAA;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sRight_1>div .hide_1 img {
+        width: 300px;
+    }
+
+    .hide_1>div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        margin: 12px 10px 0px 10px;
+        background-color: aqua;
+        height: auto;
+    }
+
+    .hide_1>div:nth-child(2) h5 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .hide_1>div:nth-child(2) p {
+        font-size: 16px;
+        color: grey;
+        font-weight: 400;
+    }
+
+    /* sRight_2-=---------------------------------------------------------------- */
+    .sRight_2>div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .sRight_2>div .hide_1 img {
+        width: 200px;
+    }
+
+    .hide_1,
+    .hide_2,
+    .hide_3 {
+
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+    }
+
+
+
+    /* medium screen */
+    @media all and (min-width: 700px) and (max-width: 950px) {
+        .block_1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Side_bar {
+            display: none;
+        }
+
+        .block_2 {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* sRight_2,3,4,5,7 */
+        .sRight_2>div {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* small screen */
+    @media all and (min-width: 200px) and (max-width: 699px) {
+        .block_1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Side_bar {
+            display: none;
+        }
+
+        .block_2 {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sRight_1>div {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        /* sRight_2,3,4,5,7 */
+        .sRight_2>div {
+            width: 400px;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+</style>
+
+<body>
+    <div id="Navbar"></div>
+    <div class="block_1">
+        <div>
+            <img src="./img (ashish)/fon top.JPG" alt="">
+        </div>
+    </div>
+
+    <div class="block_2">
+        <div>
+            <div class="Side_bar">
+
+                <!-- first Toggle -->
+                <div class="Side_bar_1">
+                    <div class="ToggleClick">
+                        <h1>Business & Meetings</h1>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <ul class="toggleList_1">
+                        <li>Sales</li>
+                        <li>Marketing</li>
+                        <li>HR</li>
+                        <li>Onboarding</li>
+                        <li>Training</li>
+                        <li>Workshop & Brainstorm</li>
+                        <li>Meeting Openers</li>
+                        <li>Pitch Decks</li>
+                    </ul>
+                </div>
+                <!-- first Toggle -->
+
+                <!-- Second Toggle -->
+                <div class="Side_bar_2 Side_bar_1">
+                    <div class="ToggleClick_2 ToggleClick">
+                        <h1>Education</h1>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <ul class="toggleList_1">
+                        <li>Science</li>
+                        <li>History</li>
+                        <li>Geography</li>
+                        <li>Mathematics</li>
+                        <li>Languages</li>
+                        <li>Assessments</li>
+                        <li>Lecture Templates</li>
+                    </ul>
+                </div>
+                <!-- Second Toggle -->
+
+                <!-- Third Toggle -->
+                <div class="Side_bar_3 Side_bar_1">
+                    <div class="ToggleClick_3 ToggleClick">
+                        <h1>Quizzes</h1>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <ul class="toggleList_1">
+                        <li>Work</li>
+                        <li>Classroom</li>
+                        <li>TV & Movies</li>
+                        <li>Music</li>
+                        <li>Literature</li>
+                        <li>Video Games</li>
+                        <li>General</li>
+                        <li>Trivia Quizzes</li>
+                        <li>Food & Drink</li>
+                        <li>Random</li>
+                    </ul>
+                </div>
+                <!-- Third Toggle -->
+
+                <!-- Four Toggle -->
+                <div class="Side_bar_4 Side_bar_1">
+                    <div class="ToggleClick_4 ToggleClick">
+                        <h1>Icebreakers </h1>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <ul class="toggleList_1">
+                        <li>Fun</li>
+                        <li>Insightful</li>
+                        <li>Big Meetings</li>
+                        <li>Teamwork</li>
+                        <li>Conversational</li>
+                    </ul>
+                </div>
+                <!-- Four Toggle -->
+
+                <!-- Five Toggle -->
+                <div class="Side_bar_5 Side_bar_1">
+                    <div class="ToggleClick_5 ToggleClick">
+                        <h1>Polls</h1>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <ul class="toggleList_1">
+                        <li> Opinion Polls</li>
+                        <li>Straw Polls</li>
+                        <li>Classroom Polls</li>
+                        <li>Meeting Polls</li>
+                    </ul>
+                </div>
+                <!-- Five Toggle -->
+
+                <!-- Six Toggle -->
+                <div class="Side_bar_6 Side_bar_1">
+                    <div class="ToggleClick_6 ToggleClick">
+                        <h1>Surveys</h1>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <ul class="toggleList_1">
+                        <li>Feedback</li>
+                        <li>Employees</li>
+                        <li>School</li>
+                        <li>Onboarding</li>
+                        <li>Education</li>
+                    </ul>
+                </div>
+                <!-- Six Toggle -->
+
+                <!-- Seven Toggle -->
+                <div class="Side_bar_7 Side_bar_1">
+                    <div class="ToggleClick_7 ToggleClick">
+                        <h1>Fun & Games</h1>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <ul class="toggleList_1">
+                        <li>Sales</li>
+                        <li>Fun Games
+                        </li>
+                        <li>Special Occasions</li>
+                        <li>Onboarding</li>
+                        <li>Training</li>
+                        <li>Workshop & Brainstorm</li>
+                        <li>Meeting Openers</li>
+                        <li>Pitch Decks</li>
+                    </ul>
+                </div>
+                <!-- Seven Toggle -->
+
+            </div>
+
+            <div class="Side_barRight">
+
+                <!-- fEATURE -->
+                <div class="sRight_1">
+                    <h1>Featured
+                    </h1>
+                    <div>
+                        <div class="hide_1">
+                            <div>
+                                <img src="./img (ashish)/flag1.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>Friend & Family Pub Quiz</h5>
+                                <p>21 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_2 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fEATURE -->
+
+                <!-- Business Presentation & Meeting Templates -->
+                <div class="sRight_2">
+                    <h1>Business Presentation & Meeting Templates
+                    </h1>
+                    <div>
+                        <div class="hide_1">
+                            <div>
+                                <img src="./img (ashish)/flag1.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>Friend & Family Pub Quiz</h5>
+                                <p>21 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_2 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_3 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Business Presentation & Meeting Templates -->
+
+                <!-- Education Presentation Templates -->
+                <div class="sRight_2 sRight_3">
+                    <h1>Education Presentation Templates
+                    </h1>
+                    <div>
+                        <div class="hide_1">
+                            <div>
+                                <img src="./img (ashish)/flag1.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>Friend & Family Pub Quiz</h5>
+                                <p>21 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_2 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_3 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Education Presentation Templates -->
+
+                <!-- Quiz Templates-->
+                <div class="sRight_2 sRight_4">
+                    <h1>Quiz Templates
+                    </h1>
+                    <div>
+                        <div class="hide_1">
+                            <div>
+                                <img src="./img (ashish)/flag1.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>Friend & Family Pub Quiz</h5>
+                                <p>21 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_2 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_3 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Quiz Templates-->
+                <!-- Icebreakers - Templates & Examples -->
+                <div class="sRight_2 sRight_5">
+                    <h1>Quiz Templates
+                    </h1>
+                    <div>
+                        <div class="hide_1">
+                            <div>
+                                <img src="./img (ashish)/flag1.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>Friend & Family Pub Quiz</h5>
+                                <p>21 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_2 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_3 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Icebreakers - Templates & Examples -->
+
+                <!-- Poll Templates & Examples -->
+                <h1>Poll Templates & Examples</h1>
+                <!-- Poll Templates & Examples -->
+
+                <!-- Survey Templates & Examples -->
+                <div class="sRight_2 sRight_7">
+                    <h1>Quiz Templates
+                    </h1>
+                    <div>
+                        <div class="hide_1">
+                            <div>
+                                <img src="./img (ashish)/flag1.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>Friend & Family Pub Quiz</h5>
+                                <p>21 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_2 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                        <div class="hide_3 hide_1">
+                            <div>
+                                <img src="./img (ashish)/cheers.JPG" alt="">
+                            </div>
+                            <div>
+                                <h5>World Flags Quiz</h5>
+                                <p>23 slides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Survey Templates & Examples -->
+
+                <!-- Games & Special Occasions -->
+                <h1>Games & Special Occasions</h1>
+                <!-- Games & Special Occasions -->
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <div class="block_n"></div>
+    <div class="block_nn"></div>
+</body>
+Science
+History
+Geography
+Mathematics
+Languages
+Assessments
+Lecture Templates
+
+</html>
+<script>
+    // first toggle
+    let Side_bar_1 = document.querySelector(".Side_bar_1");
+    let ToggleClick = document.querySelector(".ToggleClick");
+    ToggleClick.onclick = function () {
+        Side_bar_1.classList.toggle('active');
+    }
+
+    // Second toggle
+    let Side_bar_2 = document.querySelector(".Side_bar_2");
+    let ToggleClick_2 = document.querySelector(".ToggleClick_2");
+    ToggleClick_2.onclick = () => {
+        Side_bar_2.classList.toggle('active');
+    }
+
+
+    // Third toggle
+    let Side_bar_3 = document.querySelector(".Side_bar_3");
+    let ToggleClick_3 = document.querySelector(".ToggleClick_3");
+    ToggleClick_3.onclick = () => {
+        Side_bar_3.classList.toggle('active');
+    }
+
+    // fOUR toggle
+    let Side_bar_4 = document.querySelector(".Side_bar_4");
+    let ToggleClick_4 = document.querySelector(".ToggleClick_4");
+    ToggleClick_4.onclick = () => {
+        Side_bar_4.classList.toggle('active');
+    }
+
+    // Five toggle
+    let Side_bar_5 = document.querySelector(".Side_bar_5");
+    let ToggleClick_5 = document.querySelector(".ToggleClick_5");
+    ToggleClick_5.onclick = () => {
+        Side_bar_5.classList.toggle('active');
+    }
+
+
+    // Six toggle
+    let Side_bar_6 = document.querySelector(".Side_bar_6");
+    let ToggleClick_6 = document.querySelector(".ToggleClick_6");
+    ToggleClick_6.onclick = () => {
+        Side_bar_6.classList.toggle('active');
+    }
+
+    // Seven toggle
+    let Side_bar_7 = document.querySelector(".Side_bar_7");
+    let ToggleClick_7 = document.querySelector(".ToggleClick_7");
+    ToggleClick_7.onclick = () => {
+        Side_bar_7.classList.toggle('active');
+    }
+
+</script>
