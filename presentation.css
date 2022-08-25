@@ -17,14 +17,14 @@
     font-size: 25px;
 }
 #main >div h1{
-    font-size: 61px; 
-    width: 70%; 
+    font-size: 55px; 
+    width: 90%; 
 }
 #main button{
-    background-color: rgb(91, 91, 235);
+    background-color: rgb(118, 118, 193);
     color: white;
-    width: 140px;
-    height: 50px;
+    width: 200px;
+    height: 40px;
     text-align: center;
     align-items: center;
     border-radius: 5px;
@@ -33,10 +33,6 @@
 }
 #main button:hover{
     background-color: blue;
-}
-#btn{
-  padding:7px;
-
 }
 #part{
     display: grid;
@@ -87,104 +83,83 @@
     height: 100%;
 }
 #part2 >div>h1{
-   font-size: 60px; 
-}
-#part2 >div>p{
+    font-size: 55px; 
+ }
+ #part2 >div li{
     font-size: 25px;
-}
-#part2 button{
-    width: 140px;
-    height: 40px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
-    border: 3px solid blue;
-}
-#part2 button:hover{
-    background-color: blue;
-    color: white;
-}
-#btn2{
-    padding: auto;
 }
 #part3{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,400px);
     gap: 40px;
     margin: 60px auto;
     padding: 30px;
     width: 80%;
-}
-#part3 >div{
-    height:400px;
-    padding: auto;
 }
 #part3 img{
     width: 100%;
     height: 100%;
 }
 #part3 >div>h1{
-   font-size: 60px; 
+   font-size: 55px; 
 }
-#part3 >div>p{
+#part3 >div li{
     font-size: 25px;
 }
 #part4{
     display: grid;
-    grid-template-columns: repeat(4,200px);
-    padding: 60px 20px;
-    gap: 50px;
-    justify-content: space-around;
-    background-color: rgb(196, 171, 217);
-}
- #part4 img{
-    width: 70%;
-    height: 70%;
- } 
- #part5{
-    display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,400px);
     gap: 40px;
     margin: 60px auto;
     padding: 30px;
     width: 80%;
 }
-#part5 >div{
-    height:400px;
-    padding: auto;
+#part4 img{
+    width: 100%;
+    height: 100%;
+}
+#part4 >div>h1{
+   font-size: 55px; 
+}
+#part4 >div li{
+    font-size: 25px;
+}
+#part5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,400px);
+    gap: 40px;
+    margin: 60px auto;
+    padding: 30px;
+    width: 80%;
 }
 #part5 img{
     width: 100%;
     height: 100%;
 }
 #part5 >div>h1{
-   font-size: 60px; 
+   font-size: 55px; 
 }
-#part5 >div>p{
+#part5 >div li{
     font-size: 25px;
 }
-#part6{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 40px;
-    padding: 30px;
-    width: 80%;
-    margin: auto;
-    margin: 60px auto;
+#part5 button{
+    color: rgb(90, 90, 224);
+    background-color: white;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid rgb(90, 90, 224);;
 }
-#part6 >div{
-    height:400px;
-    padding: auto;
-}
-#part6 img{
-    width: 100%;
-    height: 100%;
-}
-#part6 >div>h1{
-   font-size: 60px; 
-}
-#part6 >div>p{
-    font-size: 25px;
+#part5 button:hover{
+background-color:rgb(90, 90, 224); 
+color: white;
+transition: 0s;
 }
 #h1p h1{
     width: 50%;
@@ -193,11 +168,11 @@
     font-size: 55px;
 }
 #h1p p{
-    width: 50%;
+    width: 47%;
     text-align: center; 
     padding: 30px 0px;
     margin: auto;
-    font-size: 25px;
+    font-size: 23px;
 }
 #part7{
     display: grid;
@@ -205,7 +180,7 @@
     grid-template-rows: repeat(2,450px);
     gap: 40px;
     width: 80%;
-    margin: auto;
+    margin:0px auto 120px auto;
 }
 
 #part7 img{
@@ -238,13 +213,23 @@
 .btn2:hover{
     background-color: rgb(212, 196, 196);
 }
-#htag{
-    text-align: center;
-    font-size: 55px;
-    margin:70px 0px 30px 0px;
-   
-}
 #part8{
+    text-align: center;
+}
+#part8 p{
+    font-size: 23px;
+    width: 55%;
+    margin: auto;
+}
+#part8 h1{
+    font-size: 55px;
+}
+#video{
+    margin: 80px auto;
+    width: 50%;
+    
+}
+#part9{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(1,300px);
@@ -253,14 +238,20 @@
     margin: 80px auto;
 }
 
-#part8 img{
+#part9 img{
     width: 100%;
     height: 70%;
+}
+#part9>div p{
+    font-size: 20px;
 }
 .hov:hover{
     margin-top: -10px;
     transition: 1s;
 }
-#foot{
-    background-image: url("");
+#htag{
+    text-align: center;
+    font-size: 55px;
+    margin:70px 0px 30px 0px;
+   
 }

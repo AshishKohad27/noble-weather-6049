@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Live Polling</title>
     <link rel="stylesheet" href="./feature_livepoll.css">                                                     
   
 </head>
@@ -13,9 +13,7 @@
     <div>
         <h1>Interactive Live Polling</h1>
         <p>Mentimeter gives you the power to design a wide variety of interactive polls. Polling your audience can be the most effective way to increase engagement and make a presentation dynamic and memorable.</p>
-        <div> 
-            <p id="btn"> Create Poll</p>
-        </div>
+        <button  onclick="signup()" >Create Poll</button>
     </div>
     <div>
         <img src="https://images.ctfassets.net/rvt0uslu5yqp/4sL7hMUKGMwWikyJWp6iHQ/3bedd3ce600457f34428746e22fcbad8/Mentimeter_Applications_Web_Live-Polling_HeroImage_2021__1_.png" alt="">
@@ -52,7 +50,7 @@
     <div>
         <h1>Word Clouds</h1>
         <p>Create live Word Clouds that highlight the most popular responses. Use this question type in the classroom, in meetings, or in trainings to gather audience input and to wow them with impressive visuals.</p>
-        <div> <p id="btn2">Read More</p> </div>
+        <button  onclick="signup()" >Read More</button>
     </div>
 </div>
 <div id="part3">
@@ -110,52 +108,66 @@
     <div>
         <img src="https://static.mentimeter.com/screenshot?url=https%3A%2F%2Fwww.mentimeter.com%2Fapp%2Fpresentation%2F9f24a70ac9dab41b0c175a5ad94eabfd%2F5a22dca6b636%2Fpreview&maxage=864000&w=1600&h=900?fit=fill&w=1600&h=900" alt="">
         <h2>Gender and Role Models in the Workplace</h2>
-        <button>Add Template</button>
-        <button>Preview</button>
+        <button onclick="signup()"  class="btn1">Add Template</button>
+        <button onclick="preview()"class="btn2">Preview</button>
     
     </div>
     <div>
         <img src="https://images.ctfassets.net/rvt0uslu5yqp/5EwwLKufYLKUJJsWJxTvy1/78942206414eed4fa15a31894e963428/screenshot__4_.webp?fit=fill&w=1600&h=900" alt="">
         <h2>Project Risk Management</h2>
-        <button>Add Template</button>
-        <button>Preview</button>
+        <button onclick="signup()"  class="btn1">Add Template</button>
+        <button onclick="preview()"class="btn2">Preview</button>
     
     </div>
     <div>
         <img src="https://static.mentimeter.com/screenshot?url=https%3A%2F%2Fwww.mentimeter.com%2Fapp%2Fpresentation%2Fb7369d0f725271151b47523e51b1bc65%2Fe94e1dcab8de%2Fpreview&maxage=864000&w=1600&h=900?fit=fill&w=1600&h=900" alt="">
         <h2>Teacher Training Template</h2>
-        <button>Add Template</button>
-        <button>Preview</button>
+        <button onclick="signup()"  class="btn1">Add Template</button>
+        <button onclick="preview()" class="btn2">Preview</button>
     
     </div>
     <div>
         <img src="https://images.ctfassets.net/rvt0uslu5yqp/4jhHr4o2LRZxFR8gLDsSMM/221ededa512d8e1cecabb93a063529d9/screenshot__6_.webp?fit=fill&w=1600&h=900" alt="">
         <h2>What's Most Important to Your Audience?</h2>
-        <button>Add Template</button>
-        <button>Preview</button>
+        <button onclick="signup()" class="btn1">Add Template</button>
+        <button onclick="preview()" class="btn2">Preview</button>
     
     </div>
 </div>
 <h1 id="htag">Learn the secrets to polling!</h1>
 <div id="part8">
-<div>
+<div class="hov">
     <img src="https://images.ctfassets.net/rvt0uslu5yqp/LBeIihdry5sinWbjChEse/c89a5d624f31d7cad7c98ff485820e58/Screenshot_2022-06-28_at_13.49.05.png?w=540&q=60" alt="">
     <h2>85 Poll Questions For every Ocassion</h2>
     <p>No matter who you want to poll and how you want to do it, we have the questions for you!</p>
 
 </div>
-<div>
+<div class="hov">
     <img src="https://images.ctfassets.net/rvt0uslu5yqp/5ViYBIe1JgSFzwWSBoQahX/69f777ebe5c6600f82a2891b24ac5f1d/Screenshot_2021-01-05_at_14.38.48.png?w=540&q=60" alt="">
     <h2>25 Fun Virtual Icebreakers</h2>
     <p>Polls are one of the best ways to break the ice. So let's go through some of the top icebreakers!</p>
 
 </div>
-<div>
+<div class="hov">
     <img src="https://images.ctfassets.net/rvt0uslu5yqp/1kwGmlBUISAjrZpLX1w5Y0/88ec0737e650b6799596b2d02fc546bf/Screenshot_2022-06-28_at_13.45.31.png?w=540&q=60" alt="">
     <h2>70 Fun Icebreakers</h2>
     <p>Polls questions make the best icebreakers and Mentimeter has the very best icebreakers!</p>
 
 </div>
 </div>
+<div id="foot">
+     <img src="https://files.slack.com/files-pri/T039D3USF2Q-F0401V82Z5X/25.08.2022_09.55.57_rec.png" alt=""> 
+    <h1 class="foot">Impress with interactive presentations</h1>
+    <button onclick="signup()" class="foot">Sign up for Free</button>
+</div>
 </body>
 </html>
+<script>
+    function signup(){
+        alert("btn clicked")
+    }
+    function preview(){
+        window.location.href="https://www.mentimeter.com/templates/p/project-risk-management"
+    }
+    
+</script>
