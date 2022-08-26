@@ -7,8 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solution | Overview</title>
     <link rel="stylesheet" href="./Sol_Overview.css">
-    <link rel="stylesheet" href="./block.css">
 </head>
+<style>
+    .btnHover {
+        transition: 0.5;
+        cursor: pointer;
+    }
+
+    .block_1 .btnHover:hover {
+        background-color: #729ce4;
+    }
+
+    .block_3 .btnHover:hover,
+    .block_4 .btnHover:hover,
+    .block_5 .btnHover:hover,
+    .block_6 .btnHover:hover,
+    .block_7 .btnHover:hover {
+        background-color: #196cff;
+        color: white;
+        transition: 0.5s;
+    }
+
+   
+</style>
 
 <body>
     <div id="Navbar"></div>
@@ -17,8 +38,8 @@
             <div>
                 <h1>Interactive presentations for everyone</h1>
                 <p>Whatever the situation, Mentimeter has a solution for everyone.</p>
-                <button>
-                    <p>Sign up for Free</p>
+                <button class="btnHover">
+                    <p id="GoSignup">Sign up for Free</p>
                 </button>
             </div>
             <div>
@@ -70,7 +91,7 @@
                     workshops, sales meetings and corporate training sessions that people actually want to attend!
                     Present
                     ideas and ask for answers and feedback from participants. </p>
-                <button>Learn more</button>
+                <button class="btnHover">Learn more</button>
             </div>
             <div>
                 <img src="https://images.ctfassets.net/rvt0uslu5yqp/3NIig4hndFvhmiFSbD6ICQ/32670aef93dff88eee1dfacbcfc4b6d2/pink-balloons-49f757fc0ac5aca935816d8e8f7618fb.png"
@@ -95,7 +116,7 @@
                         Suitable for all types of education, from primary school to higher education. Mentimeter is the
                         perfect tool to increase classroom engagement, and also make sure that everyone’s voice is
                         heard.</p>
-                    <button>Learn more</button>
+                    <button class="btnHover">Learn more</button>
                 </div>
             </div>
         </div>
@@ -111,7 +132,7 @@
                     plenty of extra features to make collaboration and sharing presentations with your colleagues easy,
                     you
                     can say goodbye to boring presentations at your organization forever.</p>
-                <button id="btn_block_5">Explore more stories</button>
+                <button id="btn_block_5" class="btnHover">Explore more stories</button>
             </div>
             <div>
                 <img src="https://images.ctfassets.net/rvt0uslu5yqp/GMpOvp5vrw2G0fptKqZCj/81ff3239d35d1e097837c55db115f5ba/sofa-one-on-one-60cb0007e4fcb5a7a88f9de91fffb49d.png"
@@ -120,8 +141,6 @@
         </div>
     </div>
 
-
-        
     <div class="block_4 block_6">
         <div>
             <div>
@@ -135,7 +154,7 @@
                         for speakers who present in front of live audiences and want to listen to what their audience
                         says too. Use Mentimeter to host conferences, lectures, webinars or any type of event where you
                         need to engage a large audience. </p>
-                    <button>Learn more</button>
+                    <button class="btnHover">Learn more</button>
                 </div>
             </div>
         </div>
@@ -150,7 +169,7 @@
                 <p>Turn any event into a fun, interactive experience with Mentimeter. Whether you’re hosting a pub quiz,
                     a wedding sports event or religious ceremony use Mentimeter to make sure that it’s a fun and
                     memorable event that gets everyone involved!</p>
-                <button id="btn_block_5">Explore more stories</button>
+                <button id="btn_block_5" class="btnHover">Explore more stories</button>
             </div>
             <div>
                 <img src="https://images.ctfassets.net/rvt0uslu5yqp/Jmp2LQaTNkys24FSydwOm/371115dc383c7fde7ca8a2118dc90b75/dinner-party-449247fe39771eec94c9209a7c122c55.png"
@@ -159,7 +178,21 @@
         </div>
     </div>
 
-    <div id="block_8"></div>
+    <div class="block_8">
+        <div id="down_Bl8">
+            <img src="./img (ashish)/Last 2nd div.png" alt="">
+        </div>
+        <div id="up_Bl8">
+            <h1>Impress with interactive presentations</h1>
+            <button class="btnHover">Get started</button>
+        </div>
+    </div>
 </body>
 
 </html>
+<script>
+    let GoSignup = document.getElementById("GoSignup");
+    GoSignup.addEventListener("click", function (event) {
+        window.location.href = ""
+    })
+</script>
