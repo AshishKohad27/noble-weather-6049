@@ -8,8 +8,8 @@
   color: #101834;
   cursor: pointer;
 }
-li:hover{
-color: #a5aecf;
+li:hover {
+  color: #a5aecf;
 }
 .Side_bar_1,
 .Side_bar_2 {
@@ -105,20 +105,20 @@ color: #a5aecf;
 
 /* sidebar_4 */
 .Side_bar_4.active {
-    height: 220px;
-  }
+  height: 220px;
+}
 
-  /* sidebar_5 */
+/* sidebar_5 */
 .Side_bar_5.active {
-    height: 180px;
-  }
+  height: 180px;
+}
 
-  /* sidebar_6 */
+/* sidebar_6 */
 .Side_bar_6.active {
-    height: 220px;
-  }
+  height: 220px;
+}
 
-  /* sidebar_7 */
+/* sidebar_7 */
 .Side_bar_7.active {
-    height: 110px;
-  }
+  height: 110px;
+}
