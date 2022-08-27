@@ -1,105 +1,124 @@
-.Side_bar{
-    /* background-color: aqua; */
-    margin-top: 10px;
-    position: sticky;
-    top:00px;
-    width: 196px;
-    font-weight: bold;
-    color: #101834;
-    
+.Side_bar {
+  /* background-color: aqua; */
+  margin-top: 60px;
+  position: sticky;
+  top: 00px;
+  width: 196px;
+  font-weight: bold;
+  color: #101834;
+  cursor: pointer;
 }
-.block_n{
-    height: 800px ;
-    /* background-color: red; */
+li:hover {
+  color: #a5aecf;
 }
-.block_nn{
-    height: 800px ;
-    background-color: tan;
-}
-.Side_bar_1,.Side_bar_2 {
-    background-color: aquamarine;
-    width: 200px;
-    height: 40px;
-    overflow: hidden;
-    transition: height 0.75s, width 0.5s;
-    transition-delay: 0s, 0.75s;
-    /* margin-bottom: 10px; */
-        /* display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: center; */
+.Side_bar_1,
+.Side_bar_2 {
+  width: 200px;
+  height: 40px;
+  overflow: hidden;
+  transition: height 0.75s, width 0.5s;
+  transition-delay: 0s, 0.75s;
 }
 
 .Side_bar_1.active {
-    width: 280px;
-    height: 320px;
-    transition: height 0.5s, width 0.5s;
-    transition-delay: 0s, 0.75s;
-    overflow: hidden;
+  width: 280px;
+  height: 320px;
+  transition: height 0.5s, width 0.5s;
+  transition-delay: 0s, 0.75s;
+  overflow: hidden;
+  /* background-color: orange; */
 }
-
+.Side_bar_1.active .ToggleClick {
+  background-color: gainsboro;
+}
 .Side_bar_1 .toggleList_1 {
-    transition-delay: 0.75s;
-    display: none;
-    transition: 0.5s;
+  transition-delay: 0.75s;
+  display: none;
+  transition: 0.5s;
+  /* background-color: teal; */
 }
 
-    .toggleList_1>li{
-        margin-left: 50px;
-        list-style: none;
+.toggleList_1 > li {
+  margin-left: 50px;
+  list-style: none;
 
-        padding: 8px;
-        padding-top: 10px;
-    }
+  padding: 8px;
+  padding-top: 10px;
+}
 .Side_bar_1.active .toggleList_1 {
-    background-color: teal;
-    width: 350px;
-    transition: height 0.5s, width 0.5s;
-    overflow: hidden;
-    transition-delay: 0s, 0.5s;
-    display: block;
-    transition: 0.5s;
+  /* background-color: teal; */
+  width: 350px;
+  transition: height 0.5s, width 0.5s;
+  overflow: hidden;
+  transition-delay: 0s, 0.5s;
+  display: block;
+  transition: 0.5s;
 }
 
 .ToggleClick {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
 }
-.ToggleClick>h1{
-    font-weight: 300;
-    font-size: 16px;
-    font-weight: bold;
+.ToggleClick > h1 {
+  font-weight: 300;
+  font-size: 16px;
+  font-weight: bold;
 }
-.ToggleClick>div {
-    /* background-color: lawngreen; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s;
-    /* background-color: red; */
-    margin-right: 10px;
-}
-
-.ToggleClick>div>div:nth-child(1) {
-    width: 8px;
-    height: 2px;
-    transform: rotate(50deg);
-    background-color: black;
-    transition: 0.5s;
+.ToggleClick > div {
+  /* background-color: lawngreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  /* background-color: red; */
+  margin-right: 10px;
 }
 
-.ToggleClick>div>div:last-child {
-    width: 8px;
-    height: 2px;
-    transform: rotate(-50deg);
-    background-color: black;
-    margin-left: -4px;
-    transition: 0.5s;
+.ToggleClick > div > div:nth-child(1) {
+  width: 8px;
+  height: 2px;
+  transform: rotate(50deg);
+  background-color: black;
+  transition: 0.5s;
 }
 
-.Side_bar_1.active .ToggleClick>div {
-    transform: rotate(180deg);
-    transition: 0.5s;
+.ToggleClick > div > div:last-child {
+  width: 8px;
+  height: 2px;
+  transform: rotate(-50deg);
+  background-color: black;
+  margin-left: -4px;
+  transition: 0.5s;
+}
+
+.Side_bar_1.active .ToggleClick > div {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+/* sidebar_2 */
+.Side_bar_2.active {
+  height: 290px;
+}
+
+/* sidebar_4 */
+.Side_bar_4.active {
+  height: 220px;
+}
+
+/* sidebar_5 */
+.Side_bar_5.active {
+  height: 180px;
+}
+
+/* sidebar_6 */
+.Side_bar_6.active {
+  height: 220px;
+}
+
+/* sidebar_7 */
+.Side_bar_7.active {
+  height: 110px;
 }

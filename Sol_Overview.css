@@ -9,6 +9,8 @@
   width: 100vw;
   height: 65px;
   margin: auto;
+  position: sticky;
+  top: 0;
 }
 
 /* Block 1 ----------------------------------------------------------------------------------- */
@@ -351,7 +353,7 @@
   margin-bottom: 10px;
 }
 
-/* block5------------------------------------------------------------------------------------ */
+/* block7------------------------------------------------------------------------------------ */
 .block_7 {
   margin-top: 5px;
 }
@@ -359,6 +361,53 @@
   width: 566.06px;
 }
 
+/* block8------------------------------------------------------------------------------------ */
+.block_8 {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block_8 img {
+  width: 100%;
+  height: 320px;
+}
+
+.block_8>div:last-child {
+  width: 40%;
+  position: absolute;
+  top: 50;
+  /* background-color: aqua; */
+  margin-top: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+#up_Bl8>h1 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 48px;
+  color: white;
+  font-weight: 400;
+}
+
+#up_Bl8>button {
+  font-size: 20px;
+  padding: 6px 16px 9px 16px;
+  color: #196cff;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 0px;
+  margin-top: 50px;
+  background-color: white;
+}
+
+#up_Bl8>button:hover {
+  background-color: #aebdd6;
+  color: white;
+}
 @media all and (min-width: 801px) and (max-width: 970px) {
   .block_1 > div > div:nth-child(1) > h1 {
     width: 100%;

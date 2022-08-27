@@ -7,10 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solution | Speaker</title>
     <link rel="stylesheet" href="./Sol_Speaker.css" />
+    <link rel="stylesheet" href="nav.css" />
+ <link rel="stylesheet" href="promo.css" />
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+ />
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+ rel="stylesheet"
+/> 
+
+<!--  -->
+<link rel="stylesheet" href="footer.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
 </head>
 
+<style>
+        #navbar_container{
+        position: sticky;
+        top: 0;
+        z-index: 5000;
+    }
+</style>
 <body>
-    <div id="Navbar"></div>
+    <div id="navbar_container"></div>
 
     <div class="block_1">
         <div>
@@ -43,7 +65,7 @@
                 </p>
             </div>
 
-            <div id="block_2_2">
+            <div class="block_2_2">
                 <div>
                     <img src="https://images.ctfassets.net/rvt0uslu5yqp/5LnKwSed9zYiPTOMo1j9cK/6ec452f63af756e3e51432bdcd2762f4/Mentimeter_Branding_Icons_2020-32.svg"
                         alt="block_2_1" />
@@ -71,7 +93,6 @@
 
     </div>
 
-
     <div class="block_3">
         <div>
             <div>
@@ -83,13 +104,13 @@
                     <p>Learn more</p>
                 </button>
             </div>
+            
             <div>
                 <img src="https://images.ctfassets.net/rvt0uslu5yqp/3TX97On9FBN0gQFNVR3ezp/43643316ee30d585064a37389731db04/Mentimeter_Web_Speakers_2022-04.png"
                     alt="block_3_1">
             </div>
         </div>
     </div>
-
 
     <div class="block_4">
         <div>
@@ -130,6 +151,36 @@
             </div>
         </div>
     </div>
+
+    <div class="block_8">
+        <div id="down_Bl8">
+            <img src="./img (ashish)/Last 2nd div.png" alt="">
+        </div>
+        <div id="up_Bl8">
+            <h1>Impress with interactive presentations</h1>
+            <button class="btnHover">Get started</button>
+        </div>
+    </div>
 </body>
 
 </html>
+<!-- // functionality of navbar -->
+
+<script src="nav.js"></script>
+<script type="module">
+
+    import navbar from "/navbar_export.js";
+
+    let container = document.querySelector("#navbar_container");
+    container.innerHTML = navbar();
+</script>
+
+<!--  -->
+<script type="module">
+ 
+    import footer from "/footer_export.js";
+    console.log("foooter",footer)
+   
+    let foot = document.querySelector("#footer_container");
+    foot.innerHTML = footer;
+   </script>
