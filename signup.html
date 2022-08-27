@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #logo{
+        border: 1px solid;
+        }
+        #logo>img{
+           
+            width:210px;
+            height: 80px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #head>h1{
+            line-height: 0px;
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+            /* font-family: 'Times New Roman', Times, serif; */
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        #logos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #whole{
+            width: 568px;
+            height: 629.2px;
+            margin: auto;
+            border: 1px solid;
+        }
+        input{
+            width: 360px;
+            height: 40px;
+            border-radius: 5px;
+            padding: 0 16px 0 16px;
+            margin-top: 10px;
+            border: 2px solid #101834;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        input:hover{
+            border: 2px solid #196CFF;
+        }
+        #logos>center>:first-child{
+            margin-top: 30px;
+        }
+        #ip{
+            margin-top: 25px;
+        }
+        #ip>div{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        #ip>div>label{
+            margin-left: 15%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #ip>div>input{
+            margin: auto;
+        }
+        #ip>p{
+            margin-left: 15%;
+            line-height: 0;
+            font-weight: 600;
+            font-size: 16px;
+            color: #101834; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #ip>p:last-child{
+            margin-left: 0%;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            color: #101834; 
+        }
+        #ip>button{
+            margin-left: 15%;
+            width: 400px;
+            height: 40px;
+            background-color: #196CFF;
+            color: white;
+            font-weight: 600;
+            font-size: 16PX;
+            border-radius: 5PX;
+            border: 0px;
+        }
+        #ip>button:hover{
+            background-color: #1456CC;
+        }
+        div>h3{
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 28px;
+            text-decoration: none solid rgba(16,24,52,0.75);
+            text-align: center;
+            color: #101834;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        div>h3>a{
+            color: #196CFF;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #icon>img{
+            width: 16px;
+            height: 15px;
+        }
+        #icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            width: 360px;
+            height: 40px; 
+            margin-top: 10px; 
+            border-radius: 5px;
+            padding: 0 16px 0 16px;
+        }
+        #icon1>img{
+            width: 16px;
+            height: 15px;
+        }
+        #icon1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #B7BAC2 ;
+            width: 360px;
+            height: 40px; 
+            margin-top: 10px; 
+            border-radius: 5px;
+            padding: 0 16px 0 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #icon2>img{
+            width: 16px;
+            height: 15px;
+        }
+        #icon2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            padding: 0 16px 0 16px;
+            width: 360px;
+            height: 40px; 
+            margin-top: 10px; 
+            border-radius: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #icon1:hover{
+            background-color: #B7BAC2;
+        }
+        #kill{
+            color: #196CFF;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <div id="logo" onclick="homecall()">
+        <img src="https://images.ctfassets.net/rvt0uslu5yqp/18DtpQEcpcNMOWcJaoTAxQ/25d7c32ba96d21dee48d1fc3b097dad7/Mentimeter_Branding_Logo_2020_RGB-10-v2.jpg" alt="">
+    </div>
+
+<div id="whole">
+    <div id="head">
+        <h1>Create a free account</h1>
+    </div>
+
+    <!-- <div id="logos">
+        <center>
+        <input type="text" class="icon" placeholder="sign up with facebook" required>
+        <input type="text" required>
+        <input type="text" required>
+        </center>
+    </div> -->
+    <center>
+    
+    <div id="icon" style="background-color: #4267B2;color:white">
+        <img src="https://img.icons8.com/color/72/facebook.png" alt=""><h4>Log in with Facebook</h4>
+    </div>
+    <div id="icon1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt=""><h4>Log in with Gmail</h4>
+    </div>
+    <!-- <div id="icon2" style="background-color: black;color:white">
+         <img src="https://www.pngkit.com/png/full/333-3331142_white-lock-png-download-white-padlock-icon-png.png" alt=""><h4>Authenticate with SSO</h4>
+    </div> -->
+</center>
+    <center><p style="margin-top:25px ;">or using email</p></center>
+   
+<div id="ip">
+    <div>
+        <label>First and last name</label>
+        <input type="text" id="name">
+    </div>
+    <div>
+        <label>Your email address</label>
+        <input type="text" id="email">
+    </div>
+    <div>
+        <label>Choose a password</label>
+        <input type="password" id="pass">
+    </div>
+    <p>At least 6 characters</p>
+
+    <button onclick="submit()">Submit</button>
+    <p>By signing up you accept our <a href="">terms of use</a> and <a href="">policies.</a></p>
+</div>    
+</div>
+<h3>Already have an account?  <a href="login.html"> Log in</a></h3>
+<h3 id="kill">Sign up with SSO</h3>
+    </div>
+</body>
+</html>
+
+<script src="signup.js"></script>
