@@ -2,15 +2,15 @@ count=1
 let show=()=>{
     console.log("working")
     let close=document.querySelector(".close")
-    // let home_page=document.querySelector(".landing_page")
+    let home_page=document.querySelector(".landing_page")
     count++;
     if(count%2==0){
     close.style.display="block"
-    // home_page.style.display="none"
+    home_page.style.display="none"
 }
 else{
 close.style.display="none"
-// home_page.style.display="block"
+home_page.style.display="block"
 }
     
 }
