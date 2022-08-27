@@ -92,13 +92,13 @@ function navbar(){
           <li>
             <a href="#" onclick="down2()">Resources <i class="fa-solid fa-angle-down down"></i> </a>
             <ul class="down2" >
-              <li><a href="#">How to</a></li>
-              <li><a href="#">MentiAcademy</a></li>
-              <li><a href="#">Templates</a></li>
-              <li><a href="#">Webinars</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Intergrations</a></li>
-              <li><a href="#">Help Center</a></li>
+              <li><a href="@">How to</a></li>
+              <li><a href="@">MentiAcademy</a></li>
+              <li><a href="@">Templates</a></li>
+              <li><a href="@">Webinars</a></li>
+              <li><a href="@">Blog</a></li>
+              <li><a href="@">Intergrations</a></li>
+              <li><a href="@">Help Center</a></li>
             </ul>
           </li>
           <li><a href="#">Pricing</a></li>
