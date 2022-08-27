@@ -4,142 +4,414 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page</title>
+    <title>overview</title>
     <style>
-        #icon>img{
-            width: 16px;
-            height: 15px;
+        .power1{
+            background-color: #ecedef;
+            height: auto;
+            /* width: 1519.2px; */
+            padding: 64px 128px 64px 128px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
         }
-        #icon{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid;
-            width: 360px;
-            height: 40px; 
-            margin-top: 10px; 
-            border-radius: 5px;
-            padding: 0 16px 0 16px;
+        .powerimage1>img{
+            display: block;
+            /* height: 405.2px; */
+            width: 600px;
+            /* border: #FFB9D0; */
         }
-        #icon1>img{
-            width: 16px;
-            height: 15px;
+        #powerinside1{
+            width: 600px;
+            height: 192px;
+            /* margin-top: 60px; */
         }
-        #icon1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid #B7BAC2 ;
-            width: 360px;
-            height: 40px; 
-            margin-top: 10px; 
-            border-radius: 5px;
-            padding: 0 16px 0 16px;
-        }
-        #icon2>img{
-            width: 16px;
-            height: 15px;
-        }
-        #icon2{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid;
-            padding: 0 16px 0 16px;
-            width: 360px;
-            height: 40px; 
-            margin-top: 10px; 
-            border-radius: 5px;
-            margin-bottom: 30px;
-        }
-        #icon1:hover{
-            background-color: #B7BAC2;
-        }
-
-        #ip>div{
-            display: flex;
-            flex-direction: column;
-            margin-bottom: 20px;
-        }
-        #ip>div>label{
-            margin-left: 15%;
-        }
-        #ip>div>input{
-            margin: auto;
-        }
-        label{
-            /* text-align: center; */
-            margin: auto;
-            margin-left: 562px;
-        }
-        input{
-            width: 360px;
-            height: 40px;
-            padding: 0 16px 0 16px;
-            border-radius: 5px; 
-        }
-        .in{
-            margin-top: 30px;
-        }
-        button{
-            margin-top: 30px;
-            width: 400px;
-            height: 40px;
-            padding: 0 16px 0 16px;
-            background-color:  #196CFF;
-            border-radius: 5px; 
-            font-size: 16px;
+        #powerinside1>h1{
+            width: 80%;
+            font-size: 64px;
             font-weight: 600;
+            line-height: 64px;
+            text-decoration: none solid rgb(16,24,52);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #powerinside1>h3{
+            /* border: 1px solid; */
+            margin-top: -30px;
+            width: 580px;
+            font-size: 20px;
+            line-height: 28px;
+            color: #101834;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        #powerinside1>button{
+            width: 239.1px;
+            height: 48px;
+            /* background-color: #196CFF; */
+            padding: 0 16px 0 16px;
+            color:#101834;
+            border: 0px solid #101834;
+            font-size: 18px;
+            color: white;
+            font-weight: 600;
+            line-height: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            word-wrap: break-word;
+            border-radius: 5px;
+        }
+        #powerinside1>button:hover{
+            background-color: #101834;
             color: white;
         }
-        button:hover{
-            background-color: #4267B2; 
+        
+        .power1>#powerinside1>button{
+            background-color: #196cff;
         }
-        #forget{
-            color: #196CFF;
-            font-size: 16px;
+        .power1>#powerinside1>button:hover{
+            background-color: #101834;
+            color: white;
+        }
+
+        #zoom{
+            /* width: 1519.2px; */
+            /* height: 517.513px; */
+            padding: 64px 128px 64px 128px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            /* gap: -60px; */
+        }
+        #zoom>div>img{
+            height: 389.5px;
+            width: 600px;
+            display: block;
+        }
+        #insidezoom{
+            width: 600px;
+            height: 240px;
+            /* margin-left: -80px; */
+            margin-top: 50px;
+            /* padding: 0 0 0 64px; */
+          
+        }
+        #insidezoom>h1{
+           
+            width: 500px;
+            font-size: 48px;
             font-weight: 600;
-            margin-top: 20px;
-            margin-bottom: 25px;
+            line-height: 48px;
+            text-decoration: none solid rgb(16,24,52);
+            font-family: Arial, Helvetica, sans-serif;
         }
+        #insidezoom>h3{
+            width: 560px;
+            font-size: 20px;
+            /* font-weight: 600; */
+            line-height: 20px;
+            text-decoration: none solid rgb(16,24,52,0.75);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            /* padding: 0 0 32px 0; */
+        }
+        #insidezoom>button{
+            width: 116.82px;
+            height: 40px;
+            /* background-color: #196CFF; */
+            padding: 0 16px 0 16px;
+            color: #196CFF;
+            border: 2px solid #196CFF;
+            background-color: white;
+            border-radius: 5px;
+        }
+        #insidezoom>button:hover{
+            background-color: #196CFF;
+            color: white;
+        }
+        
+        #break>center>h1{
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #break>center>h4{
+            font-size: 20px;
+            line-height: 28px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none solid rgba(16,24,52,0.75);
+        }
+        #break>center>img{
+            /* height: 266.66px; */
+            width: 800px;
+        }
+        #break>center>button{
+            width: 113.312px;
+            height: 40px;
+            color: #196CFF;
+            border: 2px solid #196CFF;
+            background-color: white;
+            border-radius: 5px;
+        }
+        #break>center>button:hover{
+            background-color: #196CFF;
+            color: white;
+        }
+        #dynamic{
+            margin-top: 20px;
+        }
+        #dynamic>img{
+            margin-left: 70px;
+            display: block;
+            height:128px ;
+            width: 128px;
+        }
+        #dynamic>h3{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #dynamic>p{
+            text-align: center;
+            /* border: 2px solid; */
+            margin-top: -10px;
+            width: 250px;
+            font-size: 16px;
+            line-height: 22.4px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+            /* margin-top: 20px;
+            padding: 64px 128px 64px 128px; */
+        }
+        #dynamic>p>a{
+            /* border: 2px solid; */
+            text-decoration: none;
+            color: #196cff;
+        }
+        #dynamic:hover{
+            margin-top: -50px;
+            transition: 1s;
+        }
+        #ss{
+            background-color: #969cf5;
+        }
+        #stock>h5{
+            padding-top: 20px;
+            font-size: 16px;
+            letter-spacing: 4px;
+            line-break: 22.4px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #stock>h1{
+            margin-top: -10px;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 48px;
+        }
+        #stock>h4{
+            margin-top: -10px;
+            font-size: 20px;
+            line-height: 28px;
+            width: 672px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #stock>button{
+            font-size: 16px;
+            text-align: center;
+            font-weight: 600;
+            border: 2px solid#1d2547;
+            height: 40px;
+            /* width: px; */
+            padding: 0 16px 0 16px;
+            background-color:#969cf5 ;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        #stock>button:hover{
+            background-color: #1d2547;
+            color: white;
+        }
+        #stock>img{
+            width: 100%;
+        }
+        @media all and (min-width: 201px) and (max-width: 800px) {
+        /* #top>div{
+            grid-template-columns: repeat(3,1fr);
+        */
+        #zoom{
+            /* border: 5px solid; */
+            width: 70%;
+            grid-template-columns: repeat(1,1fr);
+            width: auto;
+        }
+        .power1{
+            /* border: 5px solid; */
+            grid-template-columns: repeat(1,1fr);
+            /* column-gap: 50px; */
+            height: auto;
+            margin-left:0%;
+            /* background-color: aqua; */
+        }
+        #powerinside1>h1{
+            width: 80%;
+            margin-left:-10%;
+        }
+        #powerinside1>h3{
+            margin-left:-10%;
+        }
+        #powerinside1>button{
+        margin-left:-10%;
+        }
+        .powerimage1>img{
+            display: block;
+            height: auto;
+            margin-top: 200px;
+            margin-left:-10%;
+            /* width: 70%; */
+            
+            /* border: #FFB9D0; */
+        }
+        #zoom>div>img{
+            margin-left: -20%;
+        }
+        #insidezoom>h1{
+            margin-left: -20%;
+        }
+        #insidezoom>h3{
+            margin-left: -20%;
+            width: 60%;
+        }
+        #break>center>img{
+            /* height: 266.66px; */
+            width: 500px;
+        }
+        #main2{
+            display: block;
+        }
+        #ss{
+            width: 60%;
+        }
+        /* #ss>dynamic{
+            padding-left: 50px;
+        } */
+        #stock>h4{
+            width: 50%;
+        }
+    }   
     </style>
 </head>
 <body>
-    <center>
+    
+    <div class="power1">
+        
+        <div id="powerinside1">
+            <h1>Audience Engagement Platform</h1>
+            <h3>Our array of features will help you make a more effective and dynamic presentation.</h3>
+            <button>Try Mentimeter for free</button>
+        </div>
+        <div class="powerimage1">
+            <img  src="https://images.ctfassets.net/rvt0uslu5yqp/2OxgjtsTlsLJvbuelr508y/d5dba8a90290804126317f8df61423be/Mentimeter_Applications_Web_Integrations_Highlights_2022-09.png" alt="">
+        </div>
+
+    </div>
+
     <div>
-        <h1>Welcome back!</h1>
-        <h3>Log in to your Mentimeter account</h3>
-    </div>
-    <div id="icon" style="background-color: #4267B2;color:white">
-        <img src="https://img.icons8.com/color/72/facebook.png" alt=""><h4>Log in with Facebook</h4>
-    </div>
-    <div id="icon1">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt=""><h4>Log in with Gmail</h4>
-    </div>
-    <div id="icon2" style="background-color: black;color:white">
-         <img src="https://www.pngkit.com/png/full/333-3331142_white-lock-png-download-white-padlock-icon-png.png" alt=""><h4>Authenticate with SSO</h4>
-    </div>
-</center>
+        <center><h1>A feature for every need</h1></center>
+     <div id="main2">
+        <div id="dynamic">
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/8FGU0gXbFx8aeEWVI3m9b/b30473ebd3057cd1a7b68e77520ea96b/Group_188.png" alt="">
+            <h3>Dynamic Word Clouds</h3>
+            <p>A vibrant way to visualise your audience's ideas</p>
+            <p><a href="">Learn more</a></p>
+        </div>
 
-<center><p>or using email</p></center>
+        <div id="dynamic">
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/5c3huMm6gPc0U3RbouBtxd/30fd6130a65f5f11dfee026d52f793d3/Group_190.png" alt="">
+            <h3>Live & Instant Polling</h3>
+            <p>Let your audience answer any question you may have for them</p>
+            <p><a href="">Learn more</a></p>
+        </div>
 
-<div class="in">
-    <label>Your email address</label>
-    <center>
-    <input type="text" id="checkemail">
-    </center>
-</div>
-<div class="in">
-    <label>Your password</label>
-    <center>
-    <input type="text" id="checkpass">
-    </center>
-</div>
-<center>
-    <button onclick="log()">Log in</button>
-    <p id="forget">Forget password?</p>
-    <h2>New to Mentimeter?<a href="">Sign up now </a></h2>
-</center>
+        <div id="dynamic">
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/19SOqSBtiSKIaviCLhR5mG/f296a59bdb3ad59fb2512aebc8f504ac/Group_187.png" alt="">
+            <h3>Entertaining Quizzes</h3>
+            <p>Run factual, fun, or icebreaker quizzes</p>
+            <p><a href="">Learn more</a></p>
+        </div>
+
+        <div id="dynamic">
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/JkjHYtRrnJbonf4fbGbfh/87bb2a8c531c305331157df47b109839/Group_189.png" alt="">
+            <h3>Informative Q&As</h3>
+            <p>Let your audience ask questions without the fuss</p>
+            <p><a href="">Learn more</a></p>
+        </div>
+
+    
+        </div>
+    </div>
+
+    <div id="ss">
+        <center id="stock">
+            <h5>BRAND NEW!</h5>
+            <h1>A fully stocked Slide Library</h1>
+            <h4>11 all-new free-to-download slides mean you can upgrade your presentation instantly.</h4>
+            <button>Visit our library</button>
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/2p2ckI1Xdxz67Bq2Y0HzML/b63734396122986bf541773957ba6dfb/slide_library_5_2.png" alt="">
+        </center>
+    </div>
+
+    <div id="zoom">
+        <div>
+        <img  src="https://images.ctfassets.net/rvt0uslu5yqp/4kcOhZHo55OtZxFAHK57Od/cddc434d1d5fe57c0051ecd42e40b1aa/Mentimeter_Web_Features_2020-03_ReducedSize.png" alt="">
+        </div>
+        <div id="insidezoom">
+            <h1>So much more than just fancy slides</h1>
+            <h3><a href="">Build full presentations</a> and leave other tools behind.</h3>
+            <h3><a href="">Run a survey</a> before, during, or after your meeting or lecture.</h3>
+            <h3>Get started immediately without doing all the groundwork by <a href=""> downloading a template.</a></h3>
+           
+            <!-- <button>Learn more</button> -->
+        </div>
+    </div>
+
+    <div class="power1" style="background-color:white ;">
+        
+        <div id="powerinside1">
+            <h1 style="font-size:48px; line-height: 48px;">More control at your fingertips</h1>
+            <h3 style="margin-top:5px ;">Turn your smartphone into a presentation remote.</h3>
+            <button style="background-color:white ;color: #196cff;font-size: 15px; ">Learn more about Mentimote</button>
+        </div>
+        <div class="powerimage1">
+            <img  src="https://images.ctfassets.net/rvt0uslu5yqp/20adgnxQM8mw0vSlED75QQ/1067495fa9b9a83f701b3dc2f2f27551/mentimote__1_.png" alt="">
+        </div>
+
+    </div>
+
+
+    <div id="zoom">
+        <div>
+        <img  src="https://images.ctfassets.net/rvt0uslu5yqp/5VOFY94GiarAH9waPuM5ff/922de83322c3bfd850bed31f3b203575/data__1_.png" alt="">
+        </div>
+        <div id="insidezoom">
+            <h1>Collect data, gain insights</h1>
+            <h3>Use your data to help you improve, adapt, and become a more confident presenter.</h3>
+            <button>Read more</button>
+        </div>
+    </div>
+
+    <div id="break">
+        <center>
+            <h1>Break down language barriers</h1>
+            <h4>Translate Mentimeter into a variety of languages so everyone and anyone can take part.</h4>
+            <button>Read more</button>
+        </center>
+        <center>
+            <img src="https://images.ctfassets.net/rvt0uslu5yqp/RFpkC3GxwAssVexVrjQB3/8e59c91718acd9f4121697ea13dc6b99/translation.h264.gif" alt="">
+        </center>
+    </div>
 </body>
 </html>
-<script src="login.js"></script>
