@@ -163,20 +163,26 @@
 
 
 
+<!-- // functionality of navbar -->
+
+<script src="nav.js"></script>
 <script type="module">
- 
+
     import navbar from "/navbar_export.js";
-  
+
     let container = document.querySelector("#navbar_container");
     container.innerHTML = navbar();
-  </script>
 
-  
+    console.log('container:', container)
+
+</script>
+
+<!--  -->
 <script type="module">
  
     import footer from "/footer_export.js";
     // console.log("foooter",footer)
-  
+   
     let foot = document.querySelector("#footer_container");
     foot.innerHTML = footer;
-  </script>
+   </script>
