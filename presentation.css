@@ -259,7 +259,6 @@ transition: 0s;
     margin-top: 10%;
     background-image: url("https://scontent.fpat2-3.fna.fbcdn.net/v/t39.30808-6/301807287_593897098777071_4088854251616900155_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=qE8qiQUcc_wAX_P_xjD&_nc_ht=scontent.fpat2-3.fna&oh=00_AT-h3XGX681CyAAgQ_UVlKtgfRbStcFFVlKLpyyoctKBCQ&oe=630DAB33");
     height: 248px;
-    margin-bottom: 20%;
 }
 #foot h1{
     font-size: 50px;
@@ -307,7 +306,7 @@ transition: 0s;
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,auto);
         gap: 30px;
-        width: 130%;
+        width: 140%;
         }
     
     #part5{
@@ -315,7 +314,7 @@ transition: 0s;
         grid-template-columns: 100%;
         grid-template-rows: repeat(1,auto);
         gap: 30px;
-        width: 130%;
+        width: 140%;
     }
     #foot h1{
         font-size: 40px;
@@ -330,7 +329,19 @@ transition: 0s;
         grid-template-rows: repeat(3,auto);
         gap: 40px;
         margin: 80px;
-        width: 120%;
+        width: 140%;
+    }
+    #h1p h1{
+      width: 140%;
+    }
+    #h1p p{
+        width: 140%; 
+    }
+    #footer_container{
+        width: 140%;
+    }
+    #navbar_container{
+        width:140%
     }
 }
 @media all and (min-width:250px) and (max-width:600px){
@@ -338,7 +349,7 @@ transition: 0s;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,auto);
-        width: 130%;
+        width: 140%;
       
     }
     #part{
@@ -350,7 +361,7 @@ transition: 0s;
         
     }
     #polls{
-        width: 135%;
+        width: 140%;
    
     }
     #h1{
@@ -381,7 +392,7 @@ transition: 0s;
     }
     #part8{
         text-align: center;
-        width: 150%;
+        width: 135%;
         border: 3px solid;
     }
     #part8 p{
@@ -405,7 +416,7 @@ transition: 0s;
         grid-template-rows: repeat(3,auto);
         gap: 40px;
         margin: 80px;
-        width: 120%;
+        width: 140%;
     }
     #foot{
         width: 140%;

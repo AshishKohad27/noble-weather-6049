@@ -6,9 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Polling</title>
     <link rel="stylesheet" href="./feature_livepoll.css">                                                     
-  
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="nav.css" />
+     <link rel="stylesheet" href="promo.css" />
+     <link
+       rel="stylesheet"
+       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+     />
+     <link
+       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+       rel="stylesheet"
+     /> 
+     <style>
+        #navbar_container{
+            position: sticky;
+            top: 0;
+        }
+     </style>
 </head>
 <body>
+    <div id="navbar_container"></div>
    <div id="main">
     <div>
         <h1>Interactive Live Polling</h1>
@@ -160,14 +177,35 @@
     <h1>Impress with interactive presentations</h1>
     <button onclick="signup()">Sign up for Free</button>
 </div>
+<div id="footer_container"></div>
 </body>
 </html>
 <script>
     function signup(){
-        alert("btn clicked")
+        window.location.href="signup.html"
     }
     function preview(){
         window.location.href="https://www.mentimeter.com/templates/p/project-risk-management"
     }
     
 </script>
+
+<script src="nav.js"></script>
+<script type="module">
+ 
+      import navbar from "/navbar_export.js";
+    
+      let container = document.getElementById("navbar_container");
+      container.innerHTML = navbar();
+    </script>
+
+
+   <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script type="module">
+ 
+        import footer from "/footer_export.js";
+        console.log("foooter",footer)
+       
+        let foot = document.querySelector("#footer_container");
+        foot.innerHTML = footer;
+       </script>

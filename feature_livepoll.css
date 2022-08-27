@@ -1,8 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 #main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(1,400px);
-    margin: 50px auto;
+    margin: 10px auto 160px auto;
     padding: 30px;
     gap: 30px;
     width: 80%;
@@ -30,6 +34,7 @@
     border-radius: 5px;
     font-weight: bold;
     border: 0px;
+    margin: 25px 0px;
 }
 #main button:hover{
     background-color: blue;
@@ -265,7 +270,6 @@
     margin-top: 10%;
     background-image: url("https://scontent.fpat2-3.fna.fbcdn.net/v/t39.30808-6/301807287_593897098777071_4088854251616900155_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=qE8qiQUcc_wAX_P_xjD&_nc_ht=scontent.fpat2-3.fna&oh=00_AT-h3XGX681CyAAgQ_UVlKtgfRbStcFFVlKLpyyoctKBCQ&oe=630DAB33");
     height: 248px;
-    margin-bottom: 20%;
 }
 #foot h1{
     font-size: 50px;
@@ -301,7 +305,7 @@
         
     }
     #polls{
-        width: 135%;
+        width: 140%;
    
     }
     #h1{
@@ -322,16 +326,16 @@
         grid-template-rows: repeat(4,auto);
         padding: 60px 20px;
         gap: 30px;
-       width: 100%;
+       width: 140%;
     }
     #h1p h1{
-        width: 100%;
+        width: 140%;
         text-align: center;
         margin: auto;
         font-size: 40px;
     }
     #h1p p{
-        width: 100%;
+        width: 140%;
         text-align: center; 
         margin: auto;
         font-size: 22px;
@@ -341,7 +345,7 @@
         grid-template-columns: auto;
         grid-template-rows: repeat(3,auto);
         gap: 30px;
-        width: 100%;
+        width: 140%;
 
     }
     #foot h1{
@@ -355,10 +359,34 @@
 @media all and (min-width:250px) and (max-width:1000px){
     #main{
         display: grid;
-        width: 100%;
+        width: 140%;
         grid-template-columns: repeat(1,1fr);
         grid-template-rows: repeat(2,auto);
       
+    }
+    #main button{
+        margin: 25px 0px;
+    }
+    #part2{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,auto);
+        gap: 40px;
+        margin: 60px auto;
+        padding: 30px;
+        width: 140%;
+    }
+    #part2 button{
+        margin: 25px 0px;
+    }
+    #part3{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,auto);
+        gap: 40px;
+        margin: 60px auto;
+        padding: 30px;
+        width: 140%;
     }
     #part5{
         display: grid;
@@ -367,7 +395,7 @@
         gap: 40px;
         margin: 60px auto;
         padding: 30px;
-        width: 100%;
+        width: 140%;
     }
     #part6{
         display: grid;
@@ -375,7 +403,7 @@
         grid-template-rows: repeat(2,auto);
         gap: 40px;
         padding: 30px;
-        width: 100%;
+        width: 140%;
         margin: 60px auto;
     }
     #part7{
@@ -383,7 +411,7 @@
         grid-template-columns:100%;
         grid-template-rows: repeat(2,auto);
         gap: 40px;
-        width: 100%;
+        width: 140%;
         margin: auto;
     }
     #part8{
@@ -391,7 +419,7 @@
         grid-template-columns: 100%;
         grid-template-rows: repeat(3,auto);
         gap: 40px;
-        width: 120%;
+        width: 140%;
     }
     #foot h1{
         font-size: 40px;
@@ -399,4 +427,11 @@
         text-align: center;
         margin: auto;
         color: white;
+    }
+    #footer_container{
+        width: 140%;
+    }
+    #navbar_container{
+        width:140%
+    }
 }
