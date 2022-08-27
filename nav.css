@@ -27,7 +27,7 @@ nav{
     background: #ffffff;
     box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 5px 0;
     border-bottom: 1.5px solid rgb(190, 188, 188);
@@ -45,7 +45,7 @@ nav{
     height: auto;
 
 }
-nav ul{
+nav .nav_ul{
     padding: 0;
     margin: 0;
     float: right;
@@ -60,7 +60,7 @@ nav ul li{
     display: inline-block;
 }
 
-nav ul li a{
+nav .nav_ul li a{
     display: block;
     padding: 0 15px;
     color: black;
@@ -71,13 +71,13 @@ nav ul li a{
   
    
 }
-nav ul li a:hover{
+nav .nav_ul li a:hover{
     /* background: #243342; */
     color: #196cff;
   
 
 }
-nav ul ul{
+nav .nav_ul ul{
     position: absolute;
     top:50px;
     display: none;
@@ -85,23 +85,23 @@ nav ul ul{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
    
 }
-nav ul li:hover > ul{
+nav .nav_ul li:hover > ul{
     display: block;
  
 }
-nav ul ul li{
+nav .nav_ul ul li{
     width: 150px;
     float: none;
     display: list-item;
     position: relative;
 
 }
-nav ul ul ul li{
+nav .nav_ul ul ul li{
     position: relative;
     top:-60px;
     left: 150px;
 }
-nav ul li ul a{
+nav .nav_ul li ul a{
     line-height: 40px;
     /* margin-bottom: 2px; */
   
@@ -146,7 +146,7 @@ nav ul li ul a{
 
     
  
-    div ul{
+    div .nav_ul{
         padding: 0;
         margin: 0;
         /* float: right;
@@ -154,7 +154,7 @@ nav ul li ul a{
        
     
     } 
-    div ul li{
+    div .nav_ul li{
         background:  #ffffff;
         /* position: relative; */
         list-style: none;
@@ -162,7 +162,7 @@ nav ul li ul a{
         /* border: 2px solid red; */
     }
     
-    div ul li a{
+    div .nav_ul li a{
         display: block;
         padding: 0 15px;
         color: black;
@@ -173,26 +173,26 @@ nav ul li ul a{
       
        
     }
-    div ul li a:hover{
+    div .nav_ul li a:hover{
         /* background: #243342; */
         color: #196cff;
       
     
     }
-    div ul ul{
+    div .nav_ul ul{
         position: absolute;
         top:0px;
         display: none;
        
        
     }
-    div ul li:hover > ul{
+    div .nav_ul li:hover > ul{
         display: block; 
          position: relative;
    
      
     }
-    div ul ul li{
+    div .nav_ul ul li{
         width: 150px;
         float: none;
         display: list-item;
@@ -201,7 +201,7 @@ nav ul li ul a{
     
     }
  
-    div ul li ul a{
+    div .nav_ul li ul a{
         line-height: 40px;
       
     }

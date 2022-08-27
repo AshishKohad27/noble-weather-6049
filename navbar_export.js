@@ -11,12 +11,12 @@ function navbar(){
           src="https://www.seattleu.edu/media/center-for-digital-learning-and-innovation/gadget-finder/Mentimeter-logo.jpg"
         />
 
-        <ul class="nav_mid">
-          <li>
+        <ul class="nav_mid nav_ul">
+          <li class="nav_li">
             <a href="#"
               >Features <i class="fa-solid fa-angle-down down"></i>
             </a>
-            <ul>
+            <ul >
               <li><a href="#">Overview</a></li>
               <li><a href="#">Live Polling</a></li>
               <li><a href="#">Word Cloud</a></li>
@@ -66,7 +66,7 @@ function navbar(){
         </ul>
       </nav>
       <div class="close">
-        <ul >
+        <ul class="nav_ul">
           <li>
             <a  href="#" class="show" onclick="down()">Features <i class="fa-solid fa-angle-down down"></i> </a>
             <ul class="dow" >
