@@ -13,7 +13,7 @@ function log(){
     for(let i=0;i<dataarr.length;i++){
         if(dataarr[i].email=loginemail && dataarr[i].pass==loginpass){
              flag=1;
-            //  localStorage.setItem("logindata",JSON.stringify(loginemail));
+             localStorage.setItem("logindata",JSON.stringify(loginemail));
             break;
         }
     
