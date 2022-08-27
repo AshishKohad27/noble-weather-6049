@@ -49,11 +49,22 @@
             width: 100%;
             height: auto;
         }
+        .home_video_outer_div{
+            padding: 60px 0px;
+        }
         .home_video{
+            background-image: url("https://i.ibb.co/jWyVRQn/25-08-2022-07-35-38-REC.png");
+            /* border: 2px solid red; */
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 430px;
+            width: 60%;
             margin: auto;
-            width: 70%;
-            height: auto;
-            margin-top: 80px;
+            padding: 30px 0px;
         }
         .watch_video{
             /* position:relative;
@@ -70,6 +81,9 @@
             display: flex;
             align-items: center;
             
+        }
+        .arrow_right{
+            color: white;
         }
         .watch_video:hover{
             background:  #1456cc;
@@ -184,40 +198,19 @@
         .explore_more_stories_btn{
             margin-top: 10px;
         }
-        .home_end>div{
-            height: 300px;
-            padding: 0px 0px 50px 0px;
-        }
-        .home_end>div>img{
-            height: 250px;
-        }
 
-    .home_end>div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-}
-
-.text-block {
-  position: absolute;
-  color: white;
-  text-align: center;
-  width: 50%;
-  /* z-index: 0; */
-  
-}
-.text-block>h1{
+.home_end>div>h1{
     font-size: 48px;
     line-height: 45px;
-    font-weight: 400;
-    z-index: 10;
+    font-weight: 450;
     color: white;
+
     
 }
 .get_started{
         margin-top: 20px;
         background: white;
-        border: 2px solid #196cff;
+        border: 0;
         color: #196cff;
         padding: 10px 20px;
          
@@ -229,6 +222,24 @@
 button{
     cursor: pointer;
 }
+.home_end{
+    background-image: url("https://i.ibb.co/SQcP5zw/25-08-2022-09-55-57-REC.png");
+    /* border: 2px solid red; */
+    background-size: auto;
+    height: 220px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+}
+.home_end>div{
+ width: 50%;
+}
+
+
 
 @media all and (min-width: 320px) and (max-width: 840px){
     body{
@@ -259,7 +270,7 @@ button{
     padding: 10px 0px 50px 0px;
 }
 
-.text-block {
+/* .text-block {
 position: absolute;
 color: white;
 text-align: center;
@@ -271,6 +282,15 @@ font-size: 48px;
 line-height: 45px;
 font-weight: 400;
 
+} */
+
+.home_end>div>h1{
+    font-size: 33px;
+    line-height: 45px;
+    font-weight: 450;
+    color: white;
+
+    
 }
       
  }
