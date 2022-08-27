@@ -109,7 +109,16 @@ function footer(){
 
 export default footer()
 
-// link css and icons
-
 // <link rel="stylesheet" href="footer.css">
-// <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script
+// <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
+// import part
+  
+{/* <script type="module">
+ 
+ import footer from "/footer_export.js";
+ console.log("foooter",footer)
+
+ let foot = document.querySelector("#footer_container");
+ foot.innerHTML = footer;
+</script> */}
