@@ -9,12 +9,10 @@
         /* border: 2px solid red; */
         padding: 10px 10px;
         background-color: #ff80ab;
-        /* position: relative; */
-        /* margin: auto; */
-        /* bottom: 8px;
-        right: 10px; */
-
-        /* width: 100%; */
+        /* position: fixed;
+        top: 0;
+        overflow: hidden;
+        width: 99%; */
        
       }
       body{
