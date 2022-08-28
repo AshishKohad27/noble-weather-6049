@@ -1,145 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
     <style>
-        #icon>img{
+        #icon>img {
             width: 16px;
             height: 15px;
         }
-        #icon{
+
+        #icon {
             display: flex;
             justify-content: center;
             align-items: center;
             border: 1px solid;
             width: 360px;
-            height: 40px; 
-            margin-top: 10px; 
+            height: 40px;
+            margin-top: 10px;
             border-radius: 5px;
             padding: 0 16px 0 16px;
         }
-        #icon1>img{
+
+        #icon1>img {
             width: 16px;
             height: 15px;
         }
-        #icon1{
+
+        #icon1 {
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 2px solid #B7BAC2 ;
+            border: 2px solid #B7BAC2;
             width: 360px;
-            height: 40px; 
-            margin-top: 10px; 
+            height: 40px;
+            margin-top: 10px;
             border-radius: 5px;
             padding: 0 16px 0 16px;
         }
-        #icon2>img{
+
+        #icon2>img {
             width: 16px;
             height: 15px;
         }
-        #icon2{
+
+        #icon2 {
             display: flex;
             justify-content: center;
             align-items: center;
             border: 2px solid;
             padding: 0 16px 0 16px;
             width: 360px;
-            height: 40px; 
-            margin-top: 10px; 
+            height: 40px;
+            margin-top: 10px;
             border-radius: 5px;
             margin-bottom: 30px;
         }
-        #icon1:hover{
+
+        #icon1:hover {
             background-color: #B7BAC2;
         }
 
-        #ip>div{
+        #ip>div {
             display: flex;
             flex-direction: column;
             margin-bottom: 20px;
         }
-        #ip>div>label{
+
+        #ip>div>label {
             margin-left: 15%;
         }
-        #ip>div>input{
+
+        #ip>div>input {
             margin: auto;
         }
-        label{
+
+        label {
             /* text-align: center; */
             margin: auto;
-            margin-left: 562px;
+            margin-left: 472px;
         }
-        input{
+
+        input {
             width: 360px;
             height: 40px;
             padding: 0 16px 0 16px;
-            border-radius: 5px; 
+            border-radius: 5px;
         }
-        .in{
+
+        .in {
             margin-top: 30px;
         }
-        button{
+
+        button {
             margin-top: 30px;
             width: 400px;
             height: 40px;
             padding: 0 16px 0 16px;
-            background-color:  #196CFF;
-            border-radius: 5px; 
+            background-color: #196CFF;
+            border-radius: 5px;
             font-size: 16px;
             font-weight: 600;
             color: white;
         }
-        button:hover{
-            background-color: #4267B2; 
+
+        button:hover {
+            background-color: #4267B2;
         }
-        #forget{
+
+        #forget {
             color: #196CFF;
             font-size: 16px;
             font-weight: 600;
             margin-top: 20px;
             margin-bottom: 25px;
         }
+
+        #singup_ash {
+            text-decoration: none;
+            color: #196CFF;
+        }
     </style>
 </head>
+
 <body>
     <center>
-    <div>
-        <h1>Welcome back!</h1>
-        <h3>Log in to your Mentimeter account</h3>
-    </div>
-    <div id="icon" style="background-color: #4267B2;color:white">
-        <img src="https://img.icons8.com/color/72/facebook.png" alt=""><h4>Log in with Facebook</h4>
-    </div>
-    <div id="icon1">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" alt=""><h4>Log in with Gmail</h4>
-    </div>
-    <div id="icon2" style="background-color: black;color:white">
-         <img src="https://www.pngkit.com/png/full/333-3331142_white-lock-png-download-white-padlock-icon-png.png" alt=""><h4>Authenticate with SSO</h4>
-    </div>
-</center>
-
-<center><p>or using email</p></center>
-
-<div class="in">
-    <label>Your email address</label>
-    <center>
-    <input type="text" id="checkemail">
+        <div>
+            <h1>Welcome back!</h1>
+            <h3>Log in to your Mentimeter account</h3>
+        </div>
+        <div id="icon" style="background-color: #4267B2;color:white">
+            <img src="https://img.icons8.com/color/72/facebook.png" alt="">
+            <h4 >Log in with Facebook</h4>
+        </div>
+        <div id="icon1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
+                alt="">
+            <h4>Log in with Gmail</h4>
+        </div>
+        <div id="icon2" style="background-color: black;color:white">
+            <img src="https://www.pngkit.com/png/full/333-3331142_white-lock-png-download-white-padlock-icon-png.png"
+                alt="">
+            <h4>Authenticate with SSO</h4>
+        </div>
     </center>
-</div>
-<div class="in">
-    <label>Your password</label>
+
     <center>
-    <input type="text" id="checkpass">
+        <p>or using email</p>
     </center>
-</div>
-<center>
-    <button onclick="log()">Log in</button>
-    <p id="forget">Forget password?</p>
-    <h2>New to Mentimeter?<a href="">Sign up now </a></h2>
-</center>
+
+    <div class="in">
+        <label>Your email address</label>
+        <center>
+            <input type="text" id="checkemail">
+        </center>
+    </div>
+    <div class="in">
+        <label>Your password</label>
+        <center>
+            <input type="text" id="checkpass">
+        </center>
+    </div>
+    <center>
+        <button onclick="log()">Log in</button>
+        <p id="forget">Forget password?</p>
+        <h2>New to Mentimeter?<a href="signup.html" id="singup_ash">Sign up now </a></h2>
+    </center>
 </body>
+
 </html>
 <script src="login.js"></script>

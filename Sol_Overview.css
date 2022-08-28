@@ -335,6 +335,7 @@
 }
 
 /* block6------------------------------------------------------------------------------------ */
+
 .block_6 > div {
   margin-top: 5px;
 }
@@ -351,6 +352,10 @@
 }
 .block_6 > div > div:last-child > div > p {
   margin-bottom: 10px;
+}
+#block_6_h1 { 
+  margin-bottom: 60px;
+  /* background-color: aqua  ; */
 }
 
 /* block7------------------------------------------------------------------------------------ */
@@ -375,7 +380,7 @@
   height: 320px;
 }
 
-.block_8>div:last-child {
+.block_8 > div:last-child {
   width: 40%;
   position: absolute;
   top: 50;
@@ -385,7 +390,7 @@
   text-align: center;
 }
 
-#up_Bl8>h1 {
+#up_Bl8 > h1 {
   margin-top: 10px;
   text-align: center;
   font-size: 48px;
@@ -393,7 +398,7 @@
   font-weight: 400;
 }
 
-#up_Bl8>button {
+#up_Bl8 > button {
   font-size: 20px;
   padding: 6px 16px 9px 16px;
   color: #196cff;
@@ -404,7 +409,7 @@
   background-color: white;
 }
 
-#up_Bl8>button:hover {
+#up_Bl8 > button:hover {
   background-color: #aebdd6;
   color: white;
 }

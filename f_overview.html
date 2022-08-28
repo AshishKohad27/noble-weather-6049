@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>overview</title>
+    <link rel="stylesheet" href="nav.css" /> 
+    <link
+      rel="stylesheet"
+     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+     rel="stylesheet" /> 
+     <link rel="stylesheet" href="promo.css" />
+
+     <link rel="stylesheet" href="footer.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
     <style>
         .power1{
             background-color: #ecedef;
@@ -35,7 +48,7 @@
         }
         #powerinside1>h3{
             /* border: 1px solid; */
-            margin-top: -30px;
+            /* margin-top: -30px; */
             width: 580px;
             font-size: 20px;
             line-height: 28px;
@@ -57,6 +70,7 @@
             font-family: Arial, Helvetica, sans-serif;
             word-wrap: break-word;
             border-radius: 5px;
+            margin-top: 20px;
         }
         #powerinside1>button:hover{
             background-color: #101834;
@@ -120,6 +134,7 @@
             border: 2px solid #196CFF;
             background-color: white;
             border-radius: 5px;
+            margin-top: 20px;
         }
         #insidezoom>button:hover{
             background-color: #196CFF;
@@ -149,6 +164,7 @@
             border: 2px solid #196CFF;
             background-color: white;
             border-radius: 5px;
+            margin-top: 20px;
         }
         #break>center>button:hover{
             background-color: #196CFF;
@@ -156,6 +172,8 @@
         }
         #dynamic{
             margin-top: 20px;
+            /* height: 400px; */
+            margin-bottom: 20px;
         }
         #dynamic>img{
             margin-left: 70px;
@@ -169,15 +187,17 @@
             line-height: 24px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
         }
         #dynamic>p{
             text-align: center;
             /* border: 2px solid; */
-            margin-top: -10px;
+            /* margin-top: -10px; */
             width: 250px;
             font-size: 16px;
             line-height: 22.4px;
             font-family: Arial, Helvetica, sans-serif;
+
         }
         #main2{
             display: flex;
@@ -205,15 +225,16 @@
             letter-spacing: 4px;
             line-break: 22.4px;
             font-family: Arial, Helvetica, sans-serif;
+            margin-top: 10px;
         }
         #stock>h1{
-            margin-top: -10px;
+            /* margin-top: -10px; */
             font-size: 48px;
             font-weight: 600;
             line-height: 48px;
         }
         #stock>h4{
-            margin-top: -10px;
+            margin-top: 20px;
             font-size: 20px;
             line-height: 28px;
             width: 672px;
@@ -230,6 +251,7 @@
             background-color:#969cf5 ;
             margin-bottom: 20px;
             border-radius: 5px;
+            margin-top: 20px;
         }
         #stock>button:hover{
             background-color: #1d2547;
@@ -237,6 +259,12 @@
         }
         #stock>img{
             width: 100%;
+        }
+        h3{
+            margin-top: 20px;
+        }
+        p{
+            margin-top: 10px;
         }
         @media all and (min-width: 201px) and (max-width: 800px) {
         /* #top>div{
@@ -305,7 +333,7 @@
     </style>
 </head>
 <body>
-    
+    <div id="navbar_container"></div>
     <div class="power1">
         
         <div id="powerinside1">
@@ -326,7 +354,7 @@
             <img src="https://images.ctfassets.net/rvt0uslu5yqp/8FGU0gXbFx8aeEWVI3m9b/b30473ebd3057cd1a7b68e77520ea96b/Group_188.png" alt="">
             <h3>Dynamic Word Clouds</h3>
             <p>A vibrant way to visualise your audience's ideas</p>
-            <p><a href="">Learn more</a></p>
+            <p><a href="" class="learn">Learn more</a></p>
         </div>
 
         <div id="dynamic">
@@ -340,14 +368,14 @@
             <img src="https://images.ctfassets.net/rvt0uslu5yqp/19SOqSBtiSKIaviCLhR5mG/f296a59bdb3ad59fb2512aebc8f504ac/Group_187.png" alt="">
             <h3>Entertaining Quizzes</h3>
             <p>Run factual, fun, or icebreaker quizzes</p>
-            <p><a href="">Learn more</a></p>
+            <p><a href="" class="learn">Learn more</a></p>
         </div>
 
         <div id="dynamic">
             <img src="https://images.ctfassets.net/rvt0uslu5yqp/JkjHYtRrnJbonf4fbGbfh/87bb2a8c531c305331157df47b109839/Group_189.png" alt="">
             <h3>Informative Q&As</h3>
             <p>Let your audience ask questions without the fuss</p>
-            <p><a href="">Learn more</a></p>
+            <p><a href="" >Learn more</a></p>
         </div>
 
     
@@ -413,5 +441,32 @@
             <img src="https://images.ctfassets.net/rvt0uslu5yqp/RFpkC3GxwAssVexVrjQB3/8e59c91718acd9f4121697ea13dc6b99/translation.h264.gif" alt="">
         </center>
     </div>
+    <div id="footer_container"></div>
 </body>
 </html>
+<!-- functionality of navbar -->
+   
+<script src="nav.js"></script>
+   
+<!-- //  navbar import code------------> -->
+
+<script type="module">
+
+ 
+  import navbar from "/navbar_export.js";
+
+  let container = document.querySelector("#navbar_container");
+  container.innerHTML = navbar();
+</script>
+
+
+<!-- / import part -->
+
+<script type="module">
+
+import footer from "/footer_export.js";
+console.log("foooter",footer)
+
+let foot = document.querySelector("#footer_container");
+foot.innerHTML = footer;
+</script> 

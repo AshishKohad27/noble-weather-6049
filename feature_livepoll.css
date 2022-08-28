@@ -273,7 +273,7 @@
 }
 #foot h1{
     font-size: 50px;
-    width: 40%;
+    width: 60%;
     text-align: center;
     margin: auto;
     color: white;
@@ -348,13 +348,14 @@
         width: 140%;
 
     }
-    #foot h1{
+    #foot>h1{
         font-size: 30px;
         width: auto;
         text-align: center;
         margin: auto;
         color: white;
     }
+
 }
 @media all and (min-width:250px) and (max-width:1000px){
     #main{

@@ -1,10 +1,35 @@
-     <html>
-        <body>
-            
-        <head>
-            <link rel="stylesheet" href="pricing.css">
-        </head>
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pricing.css">
+</head>
+<link rel="stylesheet" href="nav.css" />
+ <link rel="stylesheet" href="promo.css" />
+ <link
+   rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+ />
+ <link
+ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+ rel="stylesheet"
+/> 
+
+<!--  -->
+<link rel="stylesheet" href="footer.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+<style>
+    #navbar_container{
+        position: sticky;
+        top: 0;
+        z-index: 5000;
+    }
+</style>
+<body>
+    <div id="navbar_container"></div>
     <h1 class="top-h1">Give everyone a voice<br> with the plan that’s right for you</h1>
     <div class="header">
         <p class="para">Are you a teacher or a student? Take a look at our <a href="learnmore.html" class="blue-ul"><span id="learnMore">prices for Education ></span></a></p>
@@ -461,9 +486,35 @@
        
 
     </div>
-
+    <!-- <div id="footer_container"></div> -->
     <!-- footer section ends here -->
+    
+</body>
+</html>
 
+<!-- // functionality of navbar -->
+
+<script src="nav.js"></script>
+<script type="module">
+
+    import navbar from "./navbar_export.js";
+
+    let container = document.querySelector("#navbar_container");
+    container.innerHTML = navbar();
+
+    console.log('container:', container)
+
+</script>
+
+<!--  -->
+<script type="module">
+ 
+    import footer from "./footer_export.js";
+    // console.log("foooter",footer)
+   
+    let foot = document.querySelector("#footer_container");
+    foot.innerHTML = footer;
+   </script>
     
   
     

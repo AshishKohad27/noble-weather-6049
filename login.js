@@ -21,6 +21,7 @@ function log(){
 
     if(flag===1){
     alert("Login Successful");
+    window.location.href = "index.html"
     }else{
     alert("Login Unsuccessful");
     }

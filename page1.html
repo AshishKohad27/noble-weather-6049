@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="nav.css" /> 
+    <link
+      rel="stylesheet"
+     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+     rel="stylesheet" /> 
+     <link rel="stylesheet" href="promo.css" />
+
+     <link rel="stylesheet" href="footer.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+
     <style>
         #heading{
             margin-top: 30px;
@@ -17,7 +30,7 @@
         }
         #sec{
             width: 550px;
-            margin-top: -20px;
+            /* margin-top: -20px    ; */
             font-size: 20px;
             font-weight: 300;
             line-height: 33.6px;
@@ -61,7 +74,7 @@
             color: #101834;
         }
         .hor>p{
-            margin-top: -10px;
+            /* margin-top: -10px; */
             font-size: 16px;
             font-weight: 600;
             line-height: 16px;
@@ -214,6 +227,9 @@
         background-color: #cccccc;
         border: 2px solid #cccccc;
       }
+      #footer_container{
+        margin-top: 40px;
+      }
 
           /* Medium screens */
       @media all and (min-width: 201px) and (max-width: 800px) {
@@ -255,8 +271,9 @@
       
     </style>
 </head>
+
 <body>
-    <div id=""></div>
+    <div id="navbar_container"></div>
     <center>
         <h1 id="heading">Integrate Mentimeter with your favorite applications</h1>
         <p id="sec">Transform your video platforms into interactive and inclusive tools.</p>
@@ -354,5 +371,33 @@
         <button>Get started</button>
         </center>
     </div>
+
+    <div id="footer_container"></div>
 </body>
 </html>
+<!-- functionality of navbar -->
+   
+   <script src="nav.js"></script>
+   
+   <!-- //  navbar import code------------> -->
+   
+   <script type="module">
+  
+    
+     import navbar from "/navbar_export.js";
+   
+     let container = document.querySelector("#navbar_container");
+     container.innerHTML = navbar();
+ </script>
+
+
+<!-- / import part -->
+  
+ <script type="module">
+ 
+ import footer from "/footer_export.js";
+ console.log("foooter",footer)
+
+ let foot = document.querySelector("#footer_container");
+ foot.innerHTML = footer;
+</script> 
